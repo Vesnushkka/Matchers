@@ -1,23 +1,24 @@
 {
-  "name": "pure-function",
+  "name": "matchers",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/xn0vf8ea5t6j9s1j?svg=true)](https://ci.appveyor.com/project/Vesnushkka/matchers)",
+  "main": "src/index.js",
   "scripts": {
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "lint": "eslint",
     "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vesnushkka/pure-function.git"
+    "url": "git+https://github.com/Vesnushkka/Matchers.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vesnushkka/pure-function/issues"
+    "url": "https://github.com/Vesnushkka/Matchers/issues"
   },
-  "homepage": "https://github.com/Vesnushkka/pure-function#readme",
+  "homepage": "https://github.com/Vesnushkka/Matchers#readme",
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.12",
@@ -27,11 +28,13 @@
     "eslint": "^8.15.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.0",
     "mini-css-extract-plugin": "^2.6.0",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
     "core-js": "^3.22.5"

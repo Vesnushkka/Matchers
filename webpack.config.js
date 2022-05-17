@@ -7,6 +7,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
   },
+  devServer: {
+    open: true,
+    compress: true,
+    hot: true,
+    port: 8080,
+  },
   module: {
     rules: [
       {

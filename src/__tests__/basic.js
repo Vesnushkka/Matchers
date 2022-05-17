@@ -1,11 +1,12 @@
-import defineHealthGrade from "../index.js";
+import filterUsers from "../index.js";
 
-test("checkHealthGrade", () => {
-    const testUser = {
-        name: "Маг",
-        health: 90,
-    };
+test("filterHealthGrade", () => {
+    const usersList = [
+        {name: 'мечник', health: 10},
+        {name: 'маг', health: 100},
+        {name: 'лучник', health: 80},
+    ]
 
-    const result = defineHealthGrade(testUser);
-    expect(result).toBe("healthy");
+    const result = filterUsers(usersList);
+    expect(result).toEqual([{name: 'маг', health: 100}, {name: 'лучник', health: 80}, {name: 'мечник', health: 10}]);
 });
